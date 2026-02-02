@@ -1,211 +1,64 @@
-*{
+body {
     margin: 0;
-    padding: 0;
-    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
 }
 
-:root{
-    font-size: 16px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.navbar{
-    display: flex;
-    align-items: center; 
-    justify-content: space-between;
-    padding: 20px 40px;
-}
-
-.navbar h1{
-    font-size: 3;
-}
-
-.navbar .rightNavbar button{
-    background-color: orangered;
-    padding: 10px 25px;
-    border-radius: 10px;
-    border: none;
-    font-size: 1.5rem;
-    color: white;
-}
-
-.categoryBar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 40px;
-    background-color: rgb(255, 139, 97);
-    color: white;
-}
-
-.categoryBar div a{
-    margin-right: 40px;
-    text-decoration: none;
-    color: white;
-    font-size: 1.25rem;
-}
-
-.newArrivals{
-    display: flex;
-    gap: 20px;
-    width: 100%;
-    padding: 20px 40px;
-}
-
-.newArrivals>div {
-    border-radius: 20px;
-    padding: 40px;
-}
-
-.arriavlsLeft{
-    width: 65%;
-    height: 60vh;
-    background-color: orangered;
-}
-
-.arrivalsRight{
-    width: 35%;
-    height: 60vh;
-    background-color: rgb(242, 242, 209);
-}
-
-.arriavlsLeft h2{
-    color: white;
-    font-size: 3.5rem;
-}
-.arriavlsLeft p{
-    color: white;
-    font-size: 1.5rem;
-}
-
-.arrivalsRight>div{
-    border-radius: 20px;
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: orangered;
-    color: black;
-    font-size: 1.5rem;
-}
-
-.cardsBox{
-    padding: 20px 40px;
-}
-
-.cardsHeading{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 0;
-}
-
-.cardsHeading h2{
-    font-size: 2.25rem;
-}
-
-.cardsHeading a{
-    text-decoration: none;
-    font-size: 1.25rem;
-    background-color: rgb(243, 243, 190);
-    color: orangered;
-    padding: 7.5px 20px;
-    border-radius: 10px;
-}
-
-.cardsHeading a:hover{
-    background-color: orangered;
-    color: rgb(243, 243, 190);
-}
-
-.cardsContainer{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-}
-
-.card{
-    width: 100%;
-    padding: 10px;
-    border: 2px solid rgb(255, 150, 112);
-    border-radius: 10px;
-}
-.card .productInfo{
-    padding: 10px;
-}
-
-.productInfo h3{
-    font-size: 1.75rem;
-}
-
-.productImage img{
-    width: 100%;
-    border-radius: 5px;
-}
-
-.cardFooter{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 10px;
-}
-
-.cardFooter a{
-    text-decoration: none;
-    font-size: 1.25rem;
-    background-color: rgb(243, 243, 190);
-    color: orangered;
-    padding: 7.5px 20px;
-    border-radius: 10px;
-}
-
-.cardFooter a:hover{
-    background-color: orangered;
-    color: rgb(243, 243, 190);
-}
-
-.contact{
-    height: 500px;
-    background-color: orangered;
-    padding: 80px 240px;
-
+.top-bar {
+    height: 60px;
+    border-bottom: 1px solid #ddd;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.contact .contactContent{
-    color: white;
-    text-align: center;
-}
-
-.contactContent h2{
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.contactContent p{
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-
-.contactInputs input{
-    border: none;
-    border-radius: 5px;
-    width: 300px;
-    padding: 7.5px 10px;
-    font-size: 1.2rem;
-}
-
-.contactInputs button{
+.profile-section {
+    display: flex;
+    padding: 40px;
     background-color: white;
-    color: orangered;
-    border: none;
-    border-radius: 5px;
-    padding: 7.5px 20px;
-    font-size: 1.2rem;
-    margin-left: 10px;
 }
 
-.contactInputs button:hover{
-    background-color: darkorange;
-    color: white;
+.profile-pic {
+    height: 150px;
+    width: 150px;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+
+.profile-info {
+    margin-left: 40px;
+}
+
+.stats {
+    display: flex;
+    gap: 25px;
+    margin: 15px 0;
+}
+
+.stats p {
+    margin: 0;
+}
+
+.bio {
+    margin: 10px 0;
+}
+
+button {
+    padding: 6px 12px;
+    border: 1px solid #ddd;
+    background-color: white;
+    cursor: pointer;
+}
+
+.posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    padding: 20px;
+}
+
+.post-box {
+    height: 250px;
+    background-color: #ddd;
 }
